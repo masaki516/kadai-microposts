@@ -1,0 +1,10 @@
+<% if likes.any? %>
+  <ul>
+    <% likes.each do |like| %>
+      <li>
+        <p><%= like.content %></p>
+      </li>
+    <% end %>
+  </ul>
+  <%= paginate likes %>
+<% end %>
